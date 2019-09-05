@@ -40,6 +40,7 @@ const sequelize = {
     Object.keys(modelDefn).forEach(attachProp)
 
     model.prototype.indexes = metaData.indexes
+    model.prototype.hooks = metaData.hooks
     return model
   }
 }
